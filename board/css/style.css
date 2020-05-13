@@ -275,7 +275,7 @@ float: right;
 #board.view > .commentList > article {
     border-top: 1px dotted #999;
     margin-top: 10px;
-    padding: 6px;
+    padding-top: 10px;
     
 }
 
