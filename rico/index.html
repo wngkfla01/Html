@@ -2,103 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>RICO::세상에서 가장 맛있는 빵</title>
-    <style>
-        /* 초기화 */
-        * {
-            margin: 0;
-            padding: 0;
-            font: normal 1px '돋움';
-        }
-
-        ul, ol {list-style: none;}
-        a {text-decoration: none; color: #111;}
-
-        #wrapper {
-            width: 100%;
-            height: auto;
-            border: 1px solid red;
-            box-sizing: border-box;
-        }
-
-        /* 헤더영역 */
-        header{}
-
-        /* 메인영역 */
-        main {
-            width: 100%;
-            height: auto;
-            margin: 0 auto;
-            border: 1px solid blue;
-            overflow: hidden;
-        }
-
-        /* 푸터영역 */
-        footer {}
-
-    </style>
+    <title>RICO  온라인 쇼핑몰</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="./css/style.css"/>
 </head>
 <body>
     <div id="wrapper">
         <header>
-            <div>
-                <div class="top_menuArea top_menu_fix">
-                    <div class="top_menu">
-                        <div class="top_list">
-                            <a href="#">로그인</a>
-                            <a href="#">회원가입</a>
-                            <a href="#">장바구니</a>
-                            <a href="#">주문조회</a>
-                            <a href="#">마이페이지</a>
-                        </div>
-                        <div class="top_logo_hide"></div>
-                        <div class="top_board"> 
-                            <ul class="top_board_menu">
-                                <li>
-                                    <a href="#">커뮤니티</a>
-                                    <div class="top_board_hidden">
-                                        <div><a href="#">NOTICE</a></div>
-                                        <div><a href="#">REVIEWS</a></div>
-                                        <div><a href="#">Q&A</a></div>
-                                        <div><a href="#">매장안내</a></div>
-                                        <div><a href="#">RVIP전용</a></div>
-                                        <div><a href="#">FAQ</a></div>
-                                        <div><a href="#">EVENT</a></div>
-                                        <div><a href="#">MEGAZINE</a></div>
-                                    </div>
-                                </li>
-                                
-                            </ul>
-                            <ul>
-                                <li><a href="#">개인결제</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">매장안내</a></li>
-                            </ul>
-                            <ul>
-                                <li><a href="#">고객센터</a></li>
-                            </ul>
-                            
-                            
-
-                        </div>
+            <div class="top">
+                <div class="top_inner">
+                    <div class="topL">
+                        <a href="#">로그인</a>
+                        <a href="#">회원가입</a>
+                        <a href="#">장바구니</a>
+                        <a href="#">주문조회</a>
+                        <a href="#">마이페이지</a>
+                    </div>
+                    <div class="topC"></div>
+                    <div class="topR">
+                        <ul>
+                            <li>
+                                <a href="#">커뮤니티</a>
+                                <ol>
+                                    <li><a href="#">NOTICE</a></li>
+                                    <li><a href="#">REVIEWS</a></li>
+                                    <li><a href="#">Q&A</a></li>
+                                    <li><a href="#">매장안내</a></li>
+                                    <li><a href="#">RVIP전용</a></li>
+                                    <li><a href="#">EVENT</a></li>
+                                    <li><a href="#">MEGAZINE</a></li>
+                                </ol>
+                            </li>
+                            <li><a href="#">개인결제</a></li>
+                            <li><a href="#">매장안내</a></li>
+                            <li><a href="#">고객센터</a></li>
+                            <li>
+                                <a href="#">f</a>
+                                <a href="#">i</a>
+                                <a href="#">t</a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <div class="top_logoArea">
+            </div>
+            <div class="logo">
+                <div class="logo_logo">
                     <div>
-                        <span>
-                            <a href="index.html"><img src="./img/logo.png" alt="logo"></a>
-                        </span>
-                    </div>
-                    <div class="top_logo_search">
-                        <form action="#">
-                            <input type="text" name="search"/>
-                            <button><i class="#"></i></button>
-                        </form>
+                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
                     </div>
                 </div>
-
-                <div class="top_category"></div>
+                <div class="logo_search">
+                    <form action="#">
+                        <input type="text" name="search"/>
+                        <button><i class="#"></i></button>
+                    </form>
+                </div>
+            </div>
+            <div class="menu">
+                <div class="menu_inner">
+                    <div class="allMenu">
+                        <div><a href="#"><i class="fas fa-bars"></i></a></div>
+                    </div>
+                    <div class="menu_category">
+                        <div class="categoryAll">
+                            <ul>
+                                <li></li>
+                            </ul>
+                        </div>
+                        <div><a href="#">쟈흐당RICO</a></div>
+                        <div><a href="#">빵</a></div>
+                        <div><a href="#">쿠키</a></div>
+                        <div><a href="#">초콜렛</a></div>
+                        <div><a href="#">선물세트</a></div>
+                        <div><a href="#">케이크</a></div>
+                        <div><a href="#">이벤트</a></div>
+                    </div>
+                </div>
             </div>
         </header>
         <main>
