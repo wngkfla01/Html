@@ -1,8 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
 /* 초기화 */
+
 * {
     margin: 0;
     padding: 0;
-    font: normal 1px '돋움';
+    font-family: Roboto,Nanum Gothic,verdana,Dotum,AppleGothic,sans-serif;
+    font-size: 12px;
+    color: #353535;
+    letter-spacing: .1px;
 }
 
 ul, ol {list-style: none;}
@@ -10,6 +15,7 @@ a {text-decoration: none; color: #111;}
 
 #wrapper {
     width: 100%;
+    height: auto;
     border: 1px solid orange;
     box-sizing: border-box;
 }
@@ -18,33 +24,32 @@ a {text-decoration: none; color: #111;}
 header {
     width: 100%;
     height: auto;
-    border: 1px solid yellow;
 }
 header > div {
     width: 100%;
 }
 
 /* header - top영역 */
-header > .top {
+.top {
     width: 100%;
     height: 43px;
     border-bottom: 1px solid rgba(150,150,150,.2);
     box-sizing: border-box;
 }
-header > .top > .top_inner {
+.top_inner {
     width: 1260px;
     height: 100%;
     margin: 0 auto;
 }
 
 /* 헤더 - topL영역 */
-header > .top > .top_inner > .topL {
+.topL {
     width: 40%;
     height: 100%;
     float: left;
     text-align: left;
 }
-header > .top > .top_inner > .topL > a {
+.topL > a {
     line-height: 43px;
     padding: 0 20px;
     color: #4a4a4a;
@@ -53,17 +58,17 @@ header > .top > .top_inner > .topL > a {
     
 
 }
-header > .top > .top_inner > .topL > a {
+.topL > a {
     border-left:  1px solid #e9e9e9;
 }
-header > .top > .top_inner > .topL > a:first-child{
+.topL > a:first-child{
     border-left: none;
     padding-left: 0;
 }
-header > .top > .topL > div > a {}
+.topL > div > a {}
 
 /* 헤더 - topC영역 */
-header > .top > .topC {
+.topC {
     display: none;
 }
 
@@ -104,6 +109,7 @@ header > .top > .topC {
 }
 
 
+
 .community > ul {
 
 }
@@ -120,8 +126,6 @@ header > .top > .topC {
     width: 1260px;
     height: 100px;
     margin: 0 auto;
-    border: 1px solid green;
-    box-sizing: border-box;
 
 }
 .logo_logo img {
@@ -131,22 +135,33 @@ header > .top > .topC {
 .logo_logo {
     text-align: center;
 }
-.logo_search {
+
+.logo_search > form {
     position: absolute;
-    width: 300px;
+    width: 220px;
     height: 26px;
     top: 50%;
     right: 0;
     margin-top: -20px;
+    border-radius: 15px;
+    padding: 2px 15px 0 15px;
+    background: rgba(40,40,40,.1);
+    border: none;
 }
 .logo_search input {
-    width: 240px;
-    height: 26px;
-    float: right;
-    background: rgba(40,40,40,.1);
-    border-radius: 15px;
+    width: 190px;
+    height: 100%;
+    background: none;
+    float: left;
     border: none;
 
+}
+.logo_search button {
+    float: right;
+    font-size: 17px;
+    background: none;
+    color: gray;
+    border: none;
 }
 
 /* 메뉴영역 */
@@ -155,13 +170,40 @@ header > .menu {
     height: 50px;
     border-top: 1px solid rgba(150,150,150,.2);
     border-bottom: 1px solid rgba(150,150,150,.2);
+    border: 1px solid red;
     box-sizing: border-box;
 }
-header > .menu > .menu_inner {
+.menu_inner {
     width: 1260px;
+    height: 100%;
     margin: 0 auto;
+    border: 1px solid green;
+    box-sizing: border-box;
 }
-header > .menu > .menu_inner > .allMenu {}
+
+.allMenu {
+    display: table;
+    width: 50px;
+    height: 100%;
+    border-left: 1px solid rgba(150,150,150,.2);
+    border-right: 1px solid rgba(150,150,150,.2);
+}
+.all_menu i {
+    width: 100%;
+    height: 100%;
+}
+.menu_category {
+}
+.menu_category a {
+    width: 70px;
+    margin: 0 auto;
+    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
+    color: #2a2a2a;
+    line-height: 49px;
+    float: left;
+}
 header > .menu > .menu_inner > .menu_category {}
 
 
@@ -170,17 +212,151 @@ header > .menu > .menu_inner > .menu_category {}
 /* 메인영역 */
 main {
     width: 100%;
-    height: auto;
+    height: 500px;
     margin: 0 auto;
     border: 1px solid blue;
     box-sizing: border-box;
     overflow: hidden;
 }
 
-/* 푸터영역 */
+/* 푸터전체영역 */
 footer {
     width: 100%;
-    height: 350px;
-    border: 1px solid pink;
-    box-sizing: border-box;
+    height: auto;
+    border-top: 1px solid rgba(150,150,150,.2);
+}
+.footer_bottom {
+    width: 1260px;
+    height: 400px;
+    margin: 0 auto;
+}
+/* 푸터 각 정보영역 제목 */
+.tle {
+    padding-bottom: 15px;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+}
+.tle > span {
+    border-left: 2px solid #555;
+    padding-left: 6px;
+    height: 9px;
+    line-height: 8px;
+    font-size: 12px;
+    color: #555;
+    font-weight: 400;
+    display: inline-block;
+}
+/* 푸터 각 정보영역 내용 */
+.footer_bottom p {
+    font-size: 11px;
+    line-height: 18px;
+    color: #353535;
+    letter-spacing: .1px;
+    
+}
+/* 푸터L */
+.footerL {
+    width: 500px;
+    padding-right: 80px;
+    float: left;
+    letter-spacing: .1px;
+}
+.footerL > div {
+    margin: 0;
+    padding: 0;
+    display: block;
+}
+
+/* 푸터L_CS CENTER */
+.footer_cs {
+    float: left;
+    width: 48%;
+}
+.footer_cs .cs_tel {
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+/* 푸터L_BANKING ACCOUNT */
+.footer_bank {
+    width: 40%;
+    float: right;
+    margin-left: 11px;
+}
+
+/* 푸터L_ANOTHER */
+.footer_another {
+    float: left;
+    width: 100%;
+    margin-top: 40px;
+}
+.footer_another img:nth-child(2) {
+    margin-left: 20px;
+}
+
+/* 푸터R */
+.footerR {
+    width: 675px;
+    float: right;
+}
+.footerR > div {
+    width: 100%;
+}
+
+/* 푸터R_RETURN ADDRESS */
+.footer_return {
+    width: 53%;
+    float: left;
+}
+
+/* 푸터R_ABOUT US */
+.footer_util {
+    width: 35%;
+    float: right;
+}
+.footer_util a {
+    line-height:18px;
+    font-size: 11px;
+}
+
+/* 푸터R_COMPANY INFO */
+.footer_add {
+    float: left;
+    width: 100%;
+    display: block;
+    margin: 56px 0 5px;
+}
+
+/* 푸터_infobanner */
+.info_banner {
+    width: 100%;
+    background: #222;
+    margin-top: 40px;
+}
+.mall_center {
+    position: relative;
+    width: 1260px;
+    height: 100%;
+    margin: 0 auto 0;
+    padding: 6px 0;
+    line-height: 20px;
+}
+.mall_center img {
+    border: none;
+    padding-right: 3px;
+    padding-top: 2px;
+    vertical-align: top;
+}
+.mall_center a {
+    color: #555555;
+    font-size: 11px;
+}
+.copyright {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    color: #666666;
+    font-size: 10px;
+    text-align: center;
+    line-height: 30px;
 }
