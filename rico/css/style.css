@@ -406,32 +406,54 @@ main {
 }
 /*하단 슬라이더 영역*/
 .slider_bottom {
-    display: block;
-    text-align: start;
-    position: relative;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: auto;
     width: 2400px;
     height: 430px;
-    max-width: 0;
-    overflow: hidden;
+    display: block;
+    left: 50%;
+    margin-left: -1200px;
+    border: 1px solid green;
 }
-.slider_bottom_inner {
+.slider_bottom > ul {
     text-align: left;
-    position: absolute;
-    top: 0;
+    float: none;
+    top: 0px;
     right: auto;
     bottom: auto;
     left: 0px;
     width: 7200px;
     height: 430px;
-    background: #f9f9f9;
+    border: 1px solid red;
 }
-.slider_bottom_inner li {}
-.slider_bottom_inner a {}
-.slider_bottom_inner img {}
+.slider_bottom > ul > li {
+    width: 800px;
+    padding: 0;
+    display: block;
+    float: left;
+    overflow: hidden;
+    text-align: center;
+}
+.slider_bottom > ul > li > a {
+    left: 50%;
+    margin-left: -500px;
+    
+}
+.btn_slider_prev {
+    left: 50%;
+    margin-left: -500px;
+}
+.btn_slider_next {
+    right: 50%;
+    margin-right: -500px;
+}
+.btn_slider_prev, .btn_slider_next {
+    top: 50%;
+    margin-top: -25px;
+    background: url();
+    width: 50px;
+    height: 50px;
+}
+.btn_prev_bg {}
+.btn_next_bg {}
 
 /* 푸터전체영역 */
 footer {
