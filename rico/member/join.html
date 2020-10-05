@@ -230,13 +230,94 @@
                                         <input id="phone3" name="phone[]" maxlength="4" type="text">
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>
+                                        휴대전화
+                                        <span class="essential">*</span>
+                                    </th>
+                                    <td>
+                                        <select id="mobile1" name="mobile[]">
+                                            <option value="010">010</option>
+                                            <option value="011">011</option>
+                                            <option value="016">016</option>
+                                            <option value="017">017</option>
+                                            <option value="018">018</option>
+                                            <option value="019">019</option>
+                                        </select>
+                                        -
+                                        <input id="mobile2" name="mobile[]" maxlength="4" type="text">
+                                        -
+                                        <input id="mobile3" name="mobile[]" maxlength="4" type="text">
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        이메일
+                                        <span class="essential">*</span>
+                                    </th>
+                                    <td>
+                                        <input type="text" name="rico_email" required>
+                                    </td>
+                                </tr>
                             </tbody>
                         </table>
                     </section>
                     <section>
                         <table>
                             <caption>추가정보</caption>
-                            <tbody></tbody>
+                            <tbody>
+                                <tr>
+                                    <th>
+                                        성별
+                                    </th>
+                                    <td>
+                                        <label>
+                                            <input type="radio" name="gender" value="1">
+                                            남자
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="gender" value="2">
+                                            여자
+                                        </label>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        생년월일
+                                        <span class="essential">*</span>
+                                    </th>
+                                    <td>
+                                        <input id="birth_year" name="birth_year" maxlength="4" type="text">
+                                        &nbsp;년
+                                        <input id="birth_month" name="birth_month" maxlength="2" type="text">
+                                        &nbsp;월
+                                        <input id="birth_date" name="birth_date" maxlength="2" type="text">
+                                        &nbsp;일
+                                        <span>
+                                            <label>
+                                                <input type="radio" name="isSolar1" checked>
+                                                양력
+                                                <input type="radio" name="isSolar2">
+                                                음력
+                                            </label>
+                                        </span>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>
+                                        결혼기념일
+                                    </th>
+                                    <td>
+                                        <input id="married_year" name="married_year" maxlength="4" type="text">
+                                        &nbsp;년
+                                        <input id="married_month" name="married_month" maxlength="2" type="text">
+                                        &nbsp;월
+                                        <input id="married_date" name="married_date" maxlength="2" type="text">
+                                        &nbsp;일
+                                    </td>
+                                </tr>
+                                <tr></tr>
+                            </tbody>
                         </table>
                     </section>
                     <section>
