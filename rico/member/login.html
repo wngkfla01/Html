@@ -97,36 +97,44 @@
         </header>
         <main>
             <div id="member-login">
-                <section>
+                <div id="member-login_inner">
                     <h3>LOGIN PAGE</h3>
                     <form action="#">
-                        <div>
-                            <label>
-                                <div class="tle">ID</div>
-                                <input type="text">
-                            </label>
-                            <label>
-                                <div class="tle">PW</div>
-                                <input type="password">
-                            </label>
+                        <div id="id_pw_area">
+                            <span id="id_pw">
+                                <label>
+                                    <span class="tle">ID</span>
+                                    <span><input type="text"></span>
+                                </label>
+                                <label>
+                                    <span class="tle">PW</span>
+                                    <span><input type="password"></span>
+                                </label>
+                            </span>
+                            <span id="login_btn">
+                                <a href="#">LOGIN</a>
+                            </span>
                         </div>
-                        <input type="submit" value="로그인">
-                        <p class="security">
-                            <span class="saveID">
-                                <input id="saveID_check" type="checkbox">
-                                <label for="saveID_check">아이디 저장</label>
+                        <div id="save_id">
+                            <p class="security">
+                                <span class="saveID">
+                                    <input id="saveID_check" type="checkbox">
+                                    <label for="saveID_check">아이디 저장</label>
+                                </span>
+                                <span class="secretConnect">
+                                    <i class="fa fa-lock" aria-hidden="true">보안접속</i>
+                                </span>
+                            </p>
+                        </div>
+                        <div id="login_else">
+                            <span>
+                                <a href="#">회원가입 |</a>
+                                <a href="#">아이디찾기 |</a>
+                                <a href="#">비밀번호찾기</a>
                             </span>
-                            <span class="secretConnect">
-                                <i class="fa fa-lock" aria-hidden="true">보안접속</i>
-                            </span>
-                        </p>
-                        <span>
-                            <a href="#">회원가입</a>
-                            <a href="#">아이디찾기</a>
-                            <a href="#">비밀번호찾기</a>
-                        </span>
+                        </div>
                     </form>
-                </section>
+                </div>
             </div>
         </main>
         <footer>
