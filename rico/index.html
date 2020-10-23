@@ -1,453 +1,521 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>RICO  온라인 쇼핑몰</title>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
-    <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
-    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
-    <link rel="stylesheet" href="./css/style.css"/>
-    <script>
-        $(document).ready(function(){
-          $('.slider > ul').bxSlider({
-              auto: true,
-              time: 500,
-              pause: 5000,
-              pager: false,
-              easing: 'linear'
-          });
-        });
-    </script>
+  <meta charset="UTF-8" />
+  <title>RICO 온라인 쇼핑몰</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+  <script src="https://kit.fontawesome.com/20962f3e4b.js" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+  <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <script>
+    $(document).ready(function () {
+      $(".slider > ul").bxSlider({
+        auto: true,
+        time: 500,
+        pause: 5000,
+        pager: false,
+        easing: "linear"
+      });
+
+      $(".middle_slider > ul").bxSlider({
+        auto: true,
+        time: 500,
+        pause: 5000,
+        pager: false,
+        easing: "linear",
+        slideWidth: 2400
+      });
+  }); 
+
+  </script>
 </head>
 <body>
-    <div id="wrapper">
-        <header>
-            <div class="top">
-                <div class="top_inner">
-                    <!-- 왼쪽상단메뉴 -->
-                    <div class="topL">
-                        <a href="#">로그인</a>
-                        <a href="#">회원가입</a>
-                        <a href="#">장바구니</a>
-                        <a href="#">주문조회</a>
-                        <a href="#">마이페이지</a>
-                    </div>
-                    <!-- 스크롤 내렸을때 중간에 로고가 나타나는 부분 -->
-                    <div class="topC"></div>
-                    <!-- 오른쪽상단메뉴 -->
-                    <div class="topR">
-                        <ul>
-                            <li>
-                                <a href="#">커뮤니티</a>
-                                <ol>
-                                    <li><a href="#">NOTICE</a>
-                                        <span class="hover_ico"></span>
-                                    </li>
-                                    <li><a href="#">REVIEWS</a>
-                                        <span class="hover_ico"></span>
-                                    </li>
-                                    <li><a href="#">Q&A</a>
-                                        <span class="hover_ico"></span>
-                                    </li>
-                                    <li><a href="#">매장안내</a>
-                                        <span class="hover_ico"></span>
-                                    </li>
-                                    <li><a href="#">RVIP전용</a>
-                                        <span class="hover_ico"></span>
-                                    </li>
-                                    <li><a href="#">EVENT</a>
-                                        <span class="hover_ico"></span>
-                                    </li>
-                                    <li><a href="#">MEGAZINE</a>
-                                        <span class="hover_ico"></span>
-                                    </li>
-                                </ol>
-                            </li>
-                            <li><a href="#">개인결제</a></li>
-                            <li><a href="#">매장안내</a></li>
-                            <li><a href="#">고객센터</a></li>
-                            <li>
-                                <a href="#">f</a>
-                                <a href="#">i</a>
-                                <a href="#">t</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+  <div id="wrapper">
+    <header>
+      <div class="top">
+        <div class="top_inner">
+          <!-- 왼쪽상단메뉴 -->
+          <div class="topL">
+            <a href="member/login.html">로그인</a>
+            <a href="member/join.html">회원가입</a>
+            <a href="#">장바구니</a>
+            <a href="#">주문조회</a>
+            <a href="#">마이페이지</a>
+          </div>
+          <!-- 스크롤 내렸을때 중간에 로고가 나타나는 부분 -->
+          <div class="topC"></div>
+          <!-- 오른쪽상단메뉴 -->
+          <div class="topR">
+            <ul>
+              <li>
+                <a href="#">커뮤니티</a>
+                <ol>
+                  <li>
+                    <a href="#">NOTICE</a>
+                    <span class="hover_ico"></span>
+                  </li>
+                  <li>
+                    <a href="#">REVIEWS</a>
+                    <span class="hover_ico"></span>
+                  </li>
+                  <li>
+                    <a href="#">Q&A</a>
+                    <span class="hover_ico"></span>
+                  </li>
+                  <li>
+                    <a href="#">매장안내</a>
+                    <span class="hover_ico"></span>
+                  </li>
+                  <li>
+                    <a href="#">RVIP전용</a>
+                    <span class="hover_ico"></span>
+                  </li>
+                  <li>
+                    <a href="#">EVENT</a>
+                    <span class="hover_ico"></span>
+                  </li>
+                  <li>
+                    <a href="#">MEGAZINE</a>
+                    <span class="hover_ico"></span>
+                  </li>
+                </ol>
+              </li>
+              <li><a href="#">개인결제</a></li>
+              <li><a href="#">매장안내</a></li>
+              <li><a href="#">고객센터</a></li>
+              <li>
+                <a href="#">f</a>
+                <a href="#">i</a>
+                <a href="#">t</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="logo">
+        <!-- 메인로고영역 -->
+        <div class="logo_logo">
+          <div>
+            <a href="#"><img src="./img/logo.png" alt="logo" /></a>
+          </div>
+        </div>
+        <!-- 검색창영역 -->
+        <div class="logo_search">
+          <form action="#">
+            <input type="text" name="search" />
+            <button><i class="fa fa-search"></i></button>
+          </form>
+        </div>
+      </div>
+      <!-- 전체메뉴영역 -->
+      <div class="menu">
+        <div class="menu_inner">
+          <div class="allMenu">
+            <div>
+              <a href="#"><i class="fas fa-bars" aria-hidden="true"></i></a>
             </div>
-            <div class="logo">
-                <!-- 메인로고영역 -->
-                <div class="logo_logo">
-                    <div>
-                        <a href="#"><img src="./img/logo.png" alt="logo"></a>
-                    </div>
-                </div>
-                <!-- 검색창영역 -->
-                <div class="logo_search">
-                    <form action="#">
-                        <input type="text" name="search"/>
-                        <button><i class="fa fa-search"></i></button>
-                    </form>
-                </div>
-            </div>
-            <!-- 전체메뉴영역 -->
-            <div class="menu">
-                <div class="menu_inner">
-                    <div class="allMenu">
-                        <div><a href="#"><i class="fas fa-bars" aria-hidden="true"></i></a></div>
-                    </div>
-                    <div class="menu_category">
-                        <div><a href="#">쟈흐당RICO</a></div>
-                        <div><a href="#">빵</a></div>
-                        <div><a href="#">쿠키</a></div>
-                        <div><a href="#">초콜렛</a></div>
-                        <div><a href="#">선물세트</a></div>
-                        <div><a href="#">케이크</a></div>
-                        <div><a href="#">이벤트</a></div>
-                    </div>
-                </div>
-            </div>
-        </header>
-        <main>
-            <!-- 상단 슬라이더 이미지 영역 -->
-            <section class="slider">
-                <ul>
-                    <li><a href="#"><img src="./img/header_1.jpg"></a></li>
-                    <li><a href="#"><img src="./img/header_2.jpg"></a></li>
-                    <li><a href="#"><img src="./img/header_3.jpg"></a></li>
-                    <li><a href="#"><img src="./img/header_4.jpg"></a></li>
+          </div>
+          <div class="menu_category">
+            <div><a href="#">쟈흐당RICO</a></div>
+            <div><a href="#">빵</a></div>
+            <div><a href="#">쿠키</a></div>
+            <div><a href="#">초콜렛</a></div>
+            <div><a href="#">선물세트</a></div>
+            <div><a href="#">케이크</a></div>
+            <div><a href="#">이벤트</a></div>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main>
+      <!-- 상단 슬라이더 이미지 영역 -->
+      <section class="slider">
+        <ul>
+          <li>
+            <a href="#"><img src="./img/header_1.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/header_2.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/header_3.jpg" /></a>
+          </li>
+          <li>
+            <a href="#"><img src="./img/header_4.jpg" /></a>
+          </li>
+        </ul>
+      </section>
+      <section class="main_img">
+        <div><a href="#"><img src="./img/main_img_giftSet.jpg" alt=""></a></div>
+        <div><a href="#"><img src="./img/main_img_forKids.jpg" alt=""></a></div>
+        <div>
+          <div><a href="#"><img src="./img/main_img_forOps.jpg" alt=""></a></div>
+          <div class="main_board">
+            <span><a href="#"><img src="./img/ico_more.gif" alt=""></a></span>
+            <div>
+              <ul class="board_info">
+                <li><a href="#"><i class="fa fa-info-circle" aria-hidden="true"></i> RICO 온라인 쇼핑몰 이용안내</a></li>
+              </ul>
+              <div>
+                <ul class="board_list">
+                  <li>공지1</li>
+                  <li>공지2</li>
+                  <li>공지3</li>
+                  <li>공지4</li>
+                  <li>공지5</li>
+                  <li>공지6</li>
                 </ul>
-            </section>
-            <section class="main_img">
-                <div class="main_img_1">
-                    <a href="#"><img src="./img/main_img_forKids.jpg" alt=""></a>
-                    <a href="#"><img src="./img/main_img_giftSet.jpg" alt=""></a>
-                </div>
-                <div class="main_img_2">
-                    <a href="#"><img src="./img/main_img_forOps.jpg" alt=""></a>
-                    
-                </div>
-            </section>
-            <!-- WEEKLY BEST 영역 -->
-            <section class="weekly_best">
-                <div>
-                    <p>이주의 인기상품!</p>
-                    <p>WEEKLY BEST</p>
-                </div>
-                <ul>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_1.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">쿠키세트 3호</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>32,000원</span></li>
-                                <li class="discount_price"><span>28,800원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_2.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">학원전 박스세트(20EA)</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>30,000원</span></li>
-                                <li class="discount_price"><span>27,000원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_3.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">까눌레 세트(6EA)</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>12,500원</span></li>
-                                <li class="discount_price"><span>11,250원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_4.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">딸기잼 롤케익</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>7,000원</span></li>
-                                <li class="discount_price"><span>6,300원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_5.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">이탈리안 레몬케익</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>18,000원</span></li>
-                                <li class="discount_price"><span>16,200원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_6.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">구운과자 M</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>53,000원</span></li>
-                                <li class="discount_price"><span>47,700원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_7.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">가또무쓸린</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>16,000원</span></li>
-                                <li class="discount_price"><span>14,400원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_8.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">호텔브레드</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>3,000원</span></li>
-                                <li class="discount_price"><span>2,700원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_9.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">르뱅 꾸빼</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>4,000원</span></li>
-                                <li class="discount_price"><span>3,600원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                    <li class="weekly_best_item">
-                        <div>
-                            <a href="#">
-                                <img src="./img/weekly_best_10.jpg">
-                            </a>
-                            <div class="sale_rate"><span>10%</span></div>
-                        </div>
-                        <span class="item_name_border">
-                            <div class="best_item_name">
-                                <a href="#">브라우니(6EA)</a>
-                            </div>
-                            <ul class="item_name_price">
-                                <li class="origin_price"><span>6,500원</span></li>
-                                <li class="discount_price"><span>5,850원</span></li>
-                            </ul>
-                            <div class="discount_img">
-                                <span><img src="./img/discount.gif" alt=""></span>
-                            </div>
-                        </span>
-                    </li>
-                </ul>
-                
-            </section>
-        </main>
-        <footer>
-            <!-- 푸터영역 -->
-            <div class="footer_bottom">
-                <div class="footerL">
-                    <div>
-                        <div class="footer_cs">
-                            <div class="tle">
-                                <span>CS CENTER</span>
-                            </div>
-                            <div class="cs_inner">
-                                <p class="cs_tel">1588. 3069</p>
-                                <p>
-                                    AM 09:30 - PM 06:00<br />
-                                    LUNCH 12:00 - 13:00<br />
-                                    주말·공휴일 휴무<br />
-                                </p>
-                            </div>
-                        </div>
-                        <div class="footer_bank">
-                            <div class="tle">
-                                <span>BANKING ACCOUNT</span>
-                            </div>
-                            <div class="bank_inner">
-                                <p>
-                                    국민 : 104301-04-417242<br />
-                                    부산 : 101-2015-1234-02<br />
-                                    농협 : 317-0013-1234-91<br />
-                                    기업 : 288-123456-04-12<br />
-                                </p>
-                                <p>예금주 : (주)RICO (주하림)</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="footer_another">
-                            <div class="tle">
-                                <span>ANOTHER</span>
-                            </div>
-                            <div>
-                                <img src="./img/footer_escrow_1.gif">
-                                <img src="./img/footer_escrow_2.png">
-                            </div>
-                        </div>
-                    </div>
-                    
-                </div>
-                <div class="footerR">
-                    <div>
-                        <div class="footer_return">
-                            <div class="tle">
-                                <span>RETURN ADDRESS</span>
-                            </div>
-                            <div class="return_inner">
-                                <p>
-                                    반품 주소 : 강남 신선로 201, B4 포장실<br />
-                                    택배 정보 : CJ대한통운 (1588-1255)<br />
-                                    <br />
-                                    -상품의 특성상 반품은 불가합니다.<br />
-                                    -단, 제품의 하자나 당사의 착오가 있을 시,<br />
-                                    상품을 받은 날부터 2일 이내에 옵스 고객센터(1588-3069)로 전화주시면,<br />
-                                    교환/반품 가능합니다.<br />
-                                    <br />
-                                    ※상품에 문제가 있는 것으로 확인되면 배송비는 옵스가 부담합니다.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="footer_util">
-                            <div class="tle">
-                                <span>ABOUT US</span>
-                            </div>
-                            <div>
-                                <a href="#">OUR COMPANY</a><br />
-                                <a href="#">AGREEMENT</a><br />
-                                <a href="#">PRIVACY POLICY [개인정보처리방침]</a><br />
-                                <a href="#">SHOP GUIDE</a><br />
-                                <a href="#">CS CENTER</a><br />
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="footer_add">
-                            <div class="tle">
-                                <span>COMPANY INFO</span>
-                            </div>
-                            <div>
-                            <p>COMPANY. (주)RICO CEO. 주하림 CPO. 주하림 [ MALL@RICO.CO.KR ] TEL. 0520-1995<br />
-                            ADDRESS. 서울특별시 강남구 신선로 201 (감만동) 1동 BUSINESS LICENSE. 617-81-12345 ONLINE LICENSE. 제 2014-서울강남구-6 호 <a href="#">[사업자정보확인]</a>
-                            </p> 
-                            </div>
-                        </div>
-                    </div>
-                </div>
+              </div>
             </div>
-            <!-- 푸터 - 최하단 인포배너영역 -->
-            <div class="info_banner">
-                <div class="mall_center">
-                    <span><a href="#"><img src="./img/footer_mark_1.png">공정거래위원회</a></span>
-                    <span><a href="#"><img src="./img/footer_mark_2.png">SSL 보안 서버 인증</a></span>
-                    <span><a href="#"><img src="./img/footer_mark_3.png">호스팅제공 카페24</a></span>
-                    <div class="copyright">
-                        COPYRIGHT © 2019 'OPS 옵스' ALL RIGHTS RESERVED
-                    </div>
-                </div>
+            
+          </div>
+        </div>
+      </section>
+
+      <!-- WEEKLY BEST 영역 -->
+      <section class="weekly_best">
+        <div>
+          <p>이주의 인기상품!</p>
+          <p>WEEKLY BEST</p>
+        </div>
+        <ul>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_1.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
             </div>
-        </footer>
-    </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">쿠키세트 3호</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>32,000원</span></li>
+                <li class="discount_price"><span>28,800원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_2.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">학원전 박스세트(20EA)</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>30,000원</span></li>
+                <li class="discount_price"><span>27,000원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_3.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">까눌레 세트(6EA)</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>12,500원</span></li>
+                <li class="discount_price"><span>11,250원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_4.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">딸기잼 롤케익</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>7,000원</span></li>
+                <li class="discount_price"><span>6,300원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_5.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">이탈리안 레몬케익</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>18,000원</span></li>
+                <li class="discount_price"><span>16,200원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_6.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">구운과자 M</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>53,000원</span></li>
+                <li class="discount_price"><span>47,700원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_7.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">가또무쓸린</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>16,000원</span></li>
+                <li class="discount_price"><span>14,400원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_8.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">호텔브레드</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>3,000원</span></li>
+                <li class="discount_price"><span>2,700원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_9.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">르뱅 꾸빼</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>4,000원</span></li>
+                <li class="discount_price"><span>3,600원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+          <li class="weekly_best_item">
+            <div>
+              <a href="#">
+                <img src="./img/weekly_best_10.jpg" />
+              </a>
+              <div class="sale_rate"><span>10%</span></div>
+            </div>
+            <span class="item_name_border">
+              <div class="best_item_name">
+                <a href="#">브라우니(6EA)</a>
+              </div>
+              <ul class="item_name_price">
+                <li class="origin_price"><span>6,500원</span></li>
+                <li class="discount_price"><span>5,850원</span></li>
+              </ul>
+              <div class="discount_img">
+                <span><img src="./img/discount.gif" alt="" /></span>
+              </div>
+            </span>
+          </li>
+        </ul>
+      </section>
+      <div class="middle_slider">
+        <ul>
+          <li><a href="#"><img src="./img/middle_slider_1.jpg" alt="초콜릿"></a></li>
+          <li><a href="#"><img src="./img/middle_slider_2.jpg" alt="복수초"></a></li>
+          <li><a href="#"><img src="./img/middle_slider_3.jpg" alt="식빵"></a></li>
+        </ul>
+      </div>
+    </main>
+    <footer>
+      <!-- 푸터영역 -->
+      <div class="footer_bottom">
+        <div class="footerL">
+          <div>
+            <div class="footer_cs">
+              <div class="tle">
+                <span>CS CENTER</span>
+              </div>
+              <div class="cs_inner">
+                <p class="cs_tel">1588. 3000</p>
+                <p>
+                  AM 09:30 - PM 06:00<br />
+                  LUNCH 12:00 - 13:00<br />
+                  주말·공휴일 휴무<br />
+                </p>
+              </div>
+            </div>
+            <div class="footer_bank">
+              <div class="tle">
+                <span>BANKING ACCOUNT</span>
+              </div>
+              <div class="bank_inner">
+                <p>
+                  국민 : 104301-04-417242<br />
+                  부산 : 101-2015-1234-02<br />
+                  농협 : 317-0013-1234-91<br />
+                  기업 : 288-123456-04-12<br />
+                </p>
+                <p>예금주 : (주)RICO (주하림)</p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="footer_another">
+              <div class="tle">
+                <span>ANOTHER</span>
+              </div>
+              <div>
+                <img src="./img/footer_escrow_1.gif" />
+                <img src="./img/footer_escrow_2.png" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="footerR">
+          <div>
+            <div class="footer_return">
+              <div class="tle">
+                <span>RETURN ADDRESS</span>
+              </div>
+              <div class="return_inner">
+                <p>
+                  반품 주소 : 강남 신선로 201, B4 포장실<br />
+                  택배 정보 : CJ대한통운 (1588-1255)<br />
+                  <br />
+                  -상품의 특성상 반품은 불가합니다.<br />
+                  -단, 제품의 하자나 당사의 착오가 있을 시,<br />
+                  상품을 받은 날부터 2일 이내에 옵스 고객센터(1588-3069)로
+                  전화주시면,<br />
+                  교환/반품 가능합니다.<br />
+                  <br />
+                  ※상품에 문제가 있는 것으로 확인되면 배송비는 옵스가
+                  부담합니다.
+                </p>
+              </div>
+            </div>
+            <div class="footer_util">
+              <div class="tle">
+                <span>ABOUT US</span>
+              </div>
+              <div>
+                <a href="#">OUR COMPANY</a><br />
+                <a href="#">AGREEMENT</a><br />
+                <a href="#">PRIVACY POLICY [개인정보처리방침]</a><br />
+                <a href="#">SHOP GUIDE</a><br />
+                <a href="#">CS CENTER</a><br />
+              </div>
+            </div>
+          </div>
+          <div>
+            <div class="footer_add">
+              <div class="tle">
+                <span>COMPANY INFO</span>
+              </div>
+              <div>
+                <p>
+                  COMPANY. (주)RICO CEO. 주하림 CPO. 주하림 [ MALL@RICO.CO.KR
+                  ] TEL. 0520-1995<br />
+                  ADDRESS. 서울특별시 강남구 신선로 201 (좌동) 1동 BUSINESS
+                  LICENSE. 617-81-12345 ONLINE LICENSE. 제 2014-서울강남구-6
+                  호 <a href="#">[사업자정보확인]</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- 푸터 - 최하단 인포배너영역 -->
+      <div class="info_banner">
+        <div class="mall_center">
+          <span
+            ><a href="#"
+              ><img src="./img/footer_mark_1.png" />공정거래위원회</a
+            ></span
+          >
+          <span
+            ><a href="#"
+              ><img src="./img/footer_mark_2.png" />SSL 보안 서버 인증</a
+            ></span
+          >
+          <span
+            ><a href="#"
+              ><img src="./img/footer_mark_3.png" />호스팅제공 카페24</a
+            ></span
+          >
+          <div class="copyright">
+            COPYRIGHT © 2019 'RICO' ALL RIGHTS RESERVED
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
 </body>
 </html>
