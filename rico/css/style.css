@@ -235,16 +235,33 @@ header > .menu {
   overflow: hidden;
 }
 
-.menu_category a {
+.menu_category > div > a {
+  position: relative;
   width: 70px;
-  margin: 0 51px;
+  margin: 0 49px;
   font-size: 13px;
   font-weight: 400;
   color: #2a2a2a;
   line-height: 49px;
   float: left;
+  border: 1px solid pink;
 }
-header > .menu > .menu_inner > .menu_category {
+.menu_category > div > a:hover .menu_underList {
+  display: block;
+}
+.menu_underList {
+  position: absolute;
+  display: none;
+  width: 100px;
+  height: 100px;
+  border: 1px solid red;
+}
+
+.menu_underList > ul {
+}
+.menu_underList > ul li {
+}
+.menu_underList > ul > ul {
 }
 
 /* 메인영역 */
@@ -858,5 +875,27 @@ input[type="checkbox"] {
   margin-top: 10px;
   margin-left: 30px;
   font-size: 15px;
+  font-weight: bold;
+}
+
+/* location.html */
+.location_content {
+  width: 420px;
+  height: auto;
+  float: left;
+}
+.container h2 {
+  padding-bottom: 70px;
+  text-align: center;
+  color: #333;
+  font-size: 19px;
+}
+.location_content img {
+  width: 390px;
+  margin-left: 10px;
+}
+.location_content p {
+  margin: 10px 0 50px 10px;
+  font-size: 13px;
   font-weight: bold;
 }
